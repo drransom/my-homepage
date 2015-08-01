@@ -11,12 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Elliot Reed, Web Developer</title>
-    <link href="./vendor/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./vendor/bootstrap-3.3.5-dist/css/bootstrap-theme.css" rel="stylesheet">
     <link href="./vendor/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./stylesheets/stylesheet.css" rel="stylesheet">
 
   <script src="./vendor/jquery-2.1.4.min.js"></script>
   <script src="./vendor/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-  <script src="./vendor/bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+  <script src="./vendor/bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
 
   </head>
   <body>
@@ -43,11 +44,9 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
                   <ul class="dropdown-menu">
-                    <li>TaskForce <small>(Rails, Backbone)</small>
-                      <ul class="links">
-                        <li><a href="#">Live</a></li>
-                        <li><a href="http://www.github.com/drransom/TaskForce">Source</a></li>
-                      </ul>
+                    <li class="portfolio-header">TaskForce <small>(Rails, Backbone)</small></li>
+                    <li><a href="https://taskforce.elliotreed.com" class="portfolio-live portfolio-link">Live</a>
+                        <a href="http://www.github.com/drransom/TaskForce" class="portfolio-source portfolio-link">Source</a>
                     </li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#">Another action</a></li>

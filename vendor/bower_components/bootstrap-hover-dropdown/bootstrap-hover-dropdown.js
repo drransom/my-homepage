@@ -29,7 +29,7 @@
             var $this = $(this),
                 $parent = $this.parent(),
                 defaults = {
-                    delay: 500,
+                    delay: 250,
                     hoverDelay: 0,
                     instantlyCloseOthers: true
                 },
@@ -99,14 +99,14 @@
                 window.clearTimeout(timeout);
                 // restart hover timer
                 window.clearTimeout(timeoutHover);
-                
-                // delay for hover event.  
+
+                // delay for hover event.
                 timeoutHover = window.setTimeout(function () {
                     $allDropdowns.find(':focus').blur();
 
                     if(settings.instantlyCloseOthers === true)
                         $allDropdowns.removeClass('open');
-                    
+
                     // clear timer for hover event
                     window.clearTimeout(timeoutHover);
                     $this.attr('aria-expanded', 'true');
