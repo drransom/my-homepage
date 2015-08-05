@@ -16,27 +16,21 @@
   display: inline-block;
 }
 
-ul.ecr-footer-links {
+ul.footer-links {
   list-style-type: none;
   display: inline-block;
   font-size: 16px;
   color: #ffffff
 }
 
-ul.ecr-footer-links > li {
+ul.footer-links > li {
   display: inline-block;
 }
 
-ul.ecr-footer-links > li > a {
+ul.footer-links > li > a {
   display: inline
 }
 
 li > .er-email {
   background-color: #1485CC;
-}
-
-li > .er-email:before {
-  content: "@";
-  color: #ffffff;
-  font-size: 16px
 }
