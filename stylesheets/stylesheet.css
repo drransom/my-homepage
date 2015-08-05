@@ -1,3 +1,7 @@
+:root {
+  --er-navbar-color: #ffffff;
+}
+
 .dropdown-menu > li.portfolio-header {
   display: block;
   padding: 3px 20px;
@@ -16,21 +20,41 @@
   display: inline-block;
 }
 
-ul.footer-links {
+ul.er-footer-links {
   list-style-type: none;
   display: inline-block;
-  font-size: 16px;
-  color: #ffffff
+  font-size: 20px;
+  color: #ffffff;
 }
 
-ul.footer-links > li {
+ul.er-footer-links > li {
   display: inline-block;
 }
 
-ul.footer-links > li > a {
-  display: inline
+ul.er-footer-links > li > a {
+  display: inline;
 }
 
-li > .er-email {
-  background-color: #1485CC;
+.er-navbar {
+    /* initial background inspiration thanks to Lea Verou at
+    http://lea.verou.me/css3patterns/#carbon-fibre */
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+}
+
+.er-navbar > a {
+  color: #ffffff;
+}
+
+.navbar-nav.er-navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-brand.er-navbar-brand {
+  color: #ffffff
 }
