@@ -39,22 +39,29 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">About Me</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="http://www.linkedin.com/in/elliotcreed">LinkedIn</a></li>
+                  </ul>
+                </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
                   <ul class="dropdown-menu">
-                    <li class="portfolio-header">TaskForce <small>(Rails, Backbone)</small></li>
+                    <li class="portfolio-header">TaskForce <small>(Rails)</small></li>
                     <li><a href="https://taskforce.elliotreed.com" class="portfolio-live portfolio-link">Live</a>
                         <a href="http://www.github.com/drransom/TaskForce" class="portfolio-source portfolio-link">Source</a>
                     </li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li class="portfolio-header">Asteroids <small>(HTML5 Canvas)</small></li>
+                    <li><a href="http://drransom.github.io/Asteroids" class="portfolio-live portfolio-link">Live</a>
+                        <a href="http://www.github.com/drransom/Asteroids" class="portfolio-source portfolio-link">Source</a>
+                    </li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li class="portfolio-header">Command Line Chess <small>(Ruby)</small></li>
+                    <li><a href="http://www.github.com/drransom/chess" class="portfolio-source portfolio-link">Source</a></li>
                   </ul>
                 </li>
               </ul>
@@ -65,6 +72,17 @@
 
         </nav>
       </header>
+    </div>
+    <div id="footer-wrapper">
+      <footer class="footer">
+        <div class="container">
+          <ul class="ecr-footer-links">
+            <li><a href="https://www.linkedin.com/pub/elliot-reed/12/674/553" style="text-decoration:none;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Elliot Reed's LinkedIn profile" style="vertical-align:middle;" border="0"></a></li>
+            <li><a class="er-email" href="mailto:elliotreed2@gmail.com"></a></li>
+          </ul>
+
+        </div>
+      </footer>
     </div>
   </body>
 </html>
