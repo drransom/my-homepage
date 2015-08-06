@@ -12,11 +12,19 @@
 }
 
 
-.dropdown-menu.er-dropdown-menu {
+.er-navbar-item {
   border: none;
   background: inherit;
   box-shadow: none;
   border-image: none;
+}
+
+.er-navbar-item:focus {
+  color: #FFFFFF
+}
+
+.navbar-nav.er-navbar-nav > li > a.er-navbar-item:hover {
+  color: #C31F26
 }
 
 .dropdown-menu > li > .er-navbar-list-item-link {
