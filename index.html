@@ -16,12 +16,12 @@
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="./stylesheets/stylesheet.css" rel="stylesheet">
 
-  <script src="./vendor/jquery-2.1.4.min.js"></script>
-  <script src="./vendor/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-  <script src="./vendor/bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
-  <script src="./vendor/node_modules/react/dist/react.js"></script>
-  <script src="./vendor/node_modules/react/dist/JSXTransformer.js"></script>
-  <script src="./javascripts/page_initialization.js"></script>
+    <script src="./vendor/jquery-2.1.4.min.js"></script>
+    <script src="./vendor/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="./vendor/bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+    <script src="./vendor/node_modules/react/dist/react.js"></script>
+    <script src="./vendor/node_modules/react/dist/JSXTransformer.js"></script>
+    <script src="./javascripts/page_initialization.js"></script>
 
   </head>
   <body>
@@ -45,27 +45,35 @@
               <ul class="nav navbar-nav er-navbar-nav">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="http://www.linkedin.com/in/elliotcreed">LinkedIn</a></li>
+                  <ul class="dropdown-menu er-dropdown-menu er-about">
+                    <li class="er-navbar-list-item"><a href="#" class="er-navbar-list-item-link">About</a></li>
+                    <li class="er-navbar-list-item"><a href="#" class="er-navbar-list-item-link">Resume</a></li>
+                    <li class="er-navbar-list-item"><a href="http://www.linkedin.com/in/elliotcreed" class="er-navbar-list-item-link">LinkedIn</a></li>
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                  <ul class="dropdown-menu">
-                    <li class="portfolio-header">TaskForce <small>(Rails)</small></li>
-                    <li><a href="https://taskforce.elliotreed.com" class="portfolio-live portfolio-link">Live</a>
-                        <a href="http://www.github.com/drransom/TaskForce" class="portfolio-source portfolio-link">Source</a>
+                  <ul class="dropdown-menu er-dropdown-menu">
+                    <li class="er-navbar-list-item">
+                      <a class="er-navbar-list-item-link er-portfolio-link" href="https://taskforce.elliotreed.com">TaskForce <small>(Rails)</small></a>
+                    </li>
+                    <li class="er-navbar-list-item">
+                      <a href="http://www.github.com/drransom/TaskForce" class="er-navbar-list-item-link er-portfolio-source">Source</a>
                     </li>
                     <li role="separator" class="divider"></li>
-                    <li class="portfolio-header">Asteroids <small>(HTML5 Canvas)</small></li>
-                    <li><a href="http://drransom.github.io/Asteroids" class="portfolio-live portfolio-link">Live</a>
-                        <a href="http://www.github.com/drransom/Asteroids" class="portfolio-source portfolio-link">Source</a>
+                    <li class="er-navbar-list-item">
+                      <a href="http://drransom.github.io/Asteroids" class="er-navbar-list-item-link er-portfolio-link">Asteroids <small>(HTML5 Canvas)</small></a>
+                    </li>
+                    <li class="er-navbar-list-item">
+                        <a href="http://www.github.com/drransom/Asteroids" class="er-navbar-list-item-link er-portfolio-source">Source</a>
                     </li>
                     <li role="separator" class="divider"></li>
-                    <li class="portfolio-header">Command Line Chess <small>(Ruby)</small></li>
-                    <li><a href="http://www.github.com/drransom/chess" class="portfolio-source portfolio-link">Source</a></li>
+                    <li class="er-navbar-list-item">
+                      <a href="http://www.github.com/drransom/chess" class="er-navbar-list-item-link er-portfolio-link">Command Line Chess <small>(Ruby)</small></a>
+                    </li>
+                    <li>
+                      <a href="http://www.github.com/drransom/chess" class="er-navbar-list-item-link er-portfolio-source">Source</a>
+                    </li>
                   </ul>
                 </li>
               </ul>

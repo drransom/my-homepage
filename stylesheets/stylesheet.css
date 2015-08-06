@@ -2,9 +2,8 @@
   --er-navbar-color: #ffffff;
 }
 
-.dropdown-menu > li.portfolio-header {
+.dropdown-menu > li.er-navbar-list-item {
   display: block;
-  padding: 3px 20px;
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
@@ -12,12 +11,30 @@
   white-space: nowrap;
 }
 
-.dropdown-menu > li > a.portfolio-live {
-  display: inline-block;
+.dropdown-menu.er-dropdown-menu {
+  border: none;
+  background-color: inherit
 }
 
-.dropdown-menu > li > a.portfolio-source {
+.dropdown-menu > li > .er-navbar-list-item-link {
+  padding: 3px 10px 3px 10px;
+  color: white
+}
+
+.dropdown-menu > li > .er-navbar-list-item-link:hover {
+  color: #C31F26;
+}
+
+.dropdown-menu > li > a.er-portfolio-link {
   display: inline-block;
+  padding-bottom: 0;
+  color: #ffffff
+}
+
+.dropdown-menu > li > a.er-portfolio-source {
+  display: inline-block;
+  padding-top: 0;
+  color: gray
 }
 
 ul.er-footer-links {
@@ -35,7 +52,11 @@ ul.er-footer-links > li > a {
   display: inline;
 }
 
-.er-navbar {
+.dropdown.er-dropdown > a:hover {
+  color: #C31F26
+}
+
+body {
     /* initial background inspiration thanks to Lea Verou at
     http://lea.verou.me/css3patterns/#carbon-fibre */
   background:
@@ -45,6 +66,12 @@ ul.er-footer-links > li > a {
   radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
   background-color:#282828;
   background-size:16px 16px;
+  border: none
+}
+
+.er-navbar {
+  background: inherit;
+  border: none
 }
 
 .er-navbar > a {
@@ -55,14 +82,50 @@ ul.er-footer-links > li > a {
   color: #ffffff;
 }
 
+.navbar-nav.er-navbar-nav > .dropdown.open > a {
+  color: #C31F26;
+  background: inherit
+}
+
 .navbar-brand.er-navbar-brand {
   color: #ffffff;
 }
 
+.navbar-brand.er-navbar-brand:hover {
+  color: #ffffff;
+  color: #C31F26
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  /*background-color: #6E6175*/
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+}
+
 .er-footer-links {
-  color: #C31B1B;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .er-footer-links > li > a {
+  color: white;
+}
+
+.er-footer-links > li > a:hover {
   color: #C31F26;
 }
