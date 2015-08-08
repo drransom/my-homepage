@@ -4,7 +4,6 @@ if (window.ECR === undefined) {
   window.ECR = {};
 }
 
-
 var IntroPage = React.createClass({
   render: function() {
     return (
