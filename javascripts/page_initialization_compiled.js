@@ -15,7 +15,7 @@
         null,
         React.createElement(
           "div",
-          { className: "container" },
+          { className: "container className = er-main-page" },
           React.createElement(
             "div",
             { className: "row" },
@@ -27,8 +27,29 @@
                 { className: "er-name" },
                 "Elliot Reed"
               ),
-              React.createElement("div", { className: "er-border" }),
-              React.createElement("div", { className: "er-details" })
+              React.createElement(
+                "div",
+                { className: "er-subheading fancy" },
+                React.createElement(
+                  "span",
+                  null,
+                  "Full Stack Web Developer Extraordinaire"
+                )
+              ),
+              React.createElement("div", { className: "er-border" })
+            )
+          ),
+          React.createElement(
+            "div",
+            { className: "row" },
+            React.createElement(
+              "div",
+              { className: "col-lg-12" },
+              React.createElement(
+                "span",
+                { "class": "subheading-text" },
+                "Portfolio - Bio"
+              )
             )
           )
         )

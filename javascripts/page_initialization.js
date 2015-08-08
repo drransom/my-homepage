@@ -9,16 +9,22 @@ var IntroPage = React.createClass({
   render: function() {
     return (
         <section>
-        <div className="container">
+        <div className="container className = er-main-page">
           <div className="row">
             <div className="col-lg-12">
               <span className="er-name">
                 Elliot Reed
               </span>
+              <div className="er-subheading fancy">
+                <span>Full Stack Web Developer Extraordinaire</span>
+              </div>
               <div className="er-border">
               </div>
-              <div className="er-details">
-              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <span class="subheading-text">Portfolio - Bio</span>
             </div>
           </div>
         </div>

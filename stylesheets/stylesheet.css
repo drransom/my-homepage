@@ -2,6 +2,10 @@
   --er-navbar-color: #ffffff;
 }
 
+body {
+  color: white
+}
+
 .dropdown-menu > li.er-navbar-list-item {
   display: block;
   clear: both;
@@ -118,6 +122,48 @@ body {
   color: #C31F26
 }
 
+
+/*Main Page styles
+--------------------------------------------------- */
+
+.er-main-page {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.er-name {
+  font-size: 700%;
+}
+
+.er-subheading {
+  font-size: 200%;
+  line-height: 0.5;
+  text-align: center;
+}
+.er-subheading span {
+  display: inline-block;
+  position: relative;
+}
+
+.er-subheading span:before,
+.er-subheading span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 150px;
+}
+.er-subheading span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.er-subheading span:after {
+  left: 100%;
+  margin-left: 15px;
+}
 
 
 /* Sticky footer styles
