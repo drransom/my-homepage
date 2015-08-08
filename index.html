@@ -20,12 +20,13 @@
     <script src="./vendor/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script src="./vendor/bower_components/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
     <script src="./vendor/node_modules/react/dist/react.js"></script>
-    <script>
-      if (window.ECR === undefined) {
-        window.ECR = {};
-      }
-    </script>
     <script src="./javascripts/page_initialization_compiled.js"></script>
+
+    <script>
+      window.onload = function() {
+        ECR.initializePage();
+      };
+    </script>
 
   </head>
   <body>
@@ -103,11 +104,5 @@
       </footer>
     </div>
   </body>
-
-  <script>
-    window.onload = function() {
-      ECR.createCommentBox();
-    };
-  </script>
 
 </html>

@@ -6,19 +6,41 @@
     window.ECR = {};
   }
 
-  var CommentBox = React.createClass({
-    displayName: "CommentBox",
+  var IntroPage = React.createClass({
+    displayName: "IntroPage",
 
     render: function render() {
       return React.createElement(
-        "div",
-        { className: "commentBox" },
-        "Hello, world! I am a CommentBox."
+        "section",
+        null,
+        React.createElement(
+          "div",
+          { className: "container" },
+          React.createElement(
+            "div",
+            { className: "row" },
+            React.createElement(
+              "div",
+              { className: "col-lg-12" },
+              React.createElement(
+                "span",
+                { className: "er-name" },
+                "Elliot Reed"
+              ),
+              React.createElement("div", { className: "er-border" }),
+              React.createElement(
+                "details",
+                null,
+                React.createElement("div", { className: "er-details" })
+              )
+            )
+          )
+        )
       );
     }
   });
 
-  ECR.createCommentBox = function () {
-    React.render(React.createElement(CommentBox, null), document.getElementById('main-content-area'));
+  ECR.initializePage = function () {
+    React.render(React.createElement(IntroPage, null), document.getElementById('main-content-area'));
   };
 })();

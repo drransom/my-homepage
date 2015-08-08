@@ -5,19 +5,33 @@ if (window.ECR === undefined) {
 }
 
 
-var CommentBox = React.createClass({
+var IntroPage = React.createClass({
   render: function() {
     return (
-      <div className="commentBox">
-        Hello, world! I am a CommentBox.
-      </div>
+        <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <span className="er-name">
+                Elliot Reed
+              </span>
+              <div className="er-border">
+              </div>
+              <details>
+                <div className="er-details">
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
     );
   }
 });
 
-ECR.createCommentBox = function() {
+ECR.initializePage = function() {
   React.render(
-    <CommentBox />,
+    <IntroPage />,
     document.getElementById('main-content-area')
   );
 }
