@@ -11,6 +11,9 @@
   white-space: nowrap;
 }
 
+.smaller-text {
+  font-size: smaller;
+}
 
 .er-navbar-item {
   border: none;

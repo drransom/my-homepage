@@ -28,11 +28,7 @@
                 "Elliot Reed"
               ),
               React.createElement("div", { className: "er-border" }),
-              React.createElement(
-                "details",
-                null,
-                React.createElement("div", { className: "er-details" })
-              )
+              React.createElement("div", { className: "er-details" })
             )
           )
         )

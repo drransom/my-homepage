@@ -17,10 +17,8 @@ var IntroPage = React.createClass({
               </span>
               <div className="er-border">
               </div>
-              <details>
-                <div className="er-details">
-                </div>
-              </details>
+              <div className="er-details">
+              </div>
             </div>
           </div>
         </div>
