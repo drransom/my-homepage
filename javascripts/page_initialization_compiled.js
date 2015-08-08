@@ -29,7 +29,7 @@
               ),
               React.createElement(
                 "div",
-                { className: "er-subheading fancy" },
+                { className: "er-subheading" },
                 React.createElement(
                   "span",
                   null,
@@ -48,7 +48,7 @@
               React.createElement(
                 "span",
                 { "class": "subheading-text" },
-                "Portfolio - Bio"
+                "Portfolio - Skills - Bio"
               )
             )
           )

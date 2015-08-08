@@ -146,7 +146,7 @@ body {
   position: relative;
 }
 
-.er-subheading span:before,
+/*.er-subheading span:before,
 .er-subheading span:after {
   content: "";
   position: absolute;
@@ -163,7 +163,7 @@ body {
 .er-subheading span:after {
   left: 100%;
   margin-left: 15px;
-}
+}*/
 
 
 /* Sticky footer styles

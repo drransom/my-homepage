@@ -15,7 +15,7 @@ var IntroPage = React.createClass({
               <span className="er-name">
                 Elliot Reed
               </span>
-              <div className="er-subheading fancy">
+              <div className="er-subheading">
                 <span>Full Stack Web Developer Extraordinaire</span>
               </div>
               <div className="er-border">
@@ -24,7 +24,7 @@ var IntroPage = React.createClass({
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <span class="subheading-text">Portfolio - Bio</span>
+              <span class="subheading-text">Portfolio - Skills - Bio</span>
             </div>
           </div>
         </div>
