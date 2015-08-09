@@ -10,6 +10,7 @@
     displayName: "IntroPage",
 
     render: function render() {
+      var element = this;
       return React.createElement(
         "section",
         null,
@@ -47,13 +48,19 @@
               { className: "col-lg-12" },
               React.createElement(
                 "span",
-                { "class": "subheading-text" },
+                { "class": "subheading-text", onClick: element.onClick },
                 "Portfolio - Skills - Bio"
               )
             )
           )
         )
       );
+    },
+    onClickCapture: function onClickCapture(event) {
+      alert('clicked!');
+    },
+    onClick: function onClick(event) {
+      alert('clicked!');
     }
   });
 

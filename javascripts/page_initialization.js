@@ -6,6 +6,7 @@ if (window.ECR === undefined) {
 
 var IntroPage = React.createClass({
   render: function() {
+    var element = this;
     return (
         <section>
         <div className="container className = er-main-page">
@@ -23,14 +24,22 @@ var IntroPage = React.createClass({
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <span class="subheading-text">Portfolio - Skills - Bio</span>
+              <span class="subheading-text" onClick={element.onClick}>Portfolio - Skills - Bio</span>
             </div>
           </div>
         </div>
       </section>
     );
+  },
+  onClickCapture: function(event) {
+    alert('clicked!');
+  },
+  onClick: function(event) {
+    alert('clicked!');
   }
 });
+
+
 
 ECR.initializePage = function() {
   React.render(
