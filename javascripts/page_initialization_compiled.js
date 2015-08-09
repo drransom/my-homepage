@@ -6,6 +6,18 @@
     window.ECR = {};
   }
 
+  var ChoiceLink = React.createClass({
+    displayName: "ChoiceLink",
+
+    render: function render() {
+      return React.createElement(
+        "button",
+        { type: "button", className: "btn er-btn", onClick: this.props.onClick },
+        this.props.children
+      );
+    }
+  });
+
   var IntroPage = React.createClass({
     displayName: "IntroPage",
 
@@ -48,8 +60,24 @@
               { className: "col-lg-12" },
               React.createElement(
                 "span",
-                { "class": "subheading-text", onClick: element.onClick },
-                "Portfolio - Skills - Bio"
+                { className: "subheading-text" },
+                React.createElement(
+                  ChoiceLink,
+                  { onClick: ECR.displayPortfolio },
+                  "Portfolio"
+                ),
+                " -",
+                React.createElement(
+                  ChoiceLink,
+                  { onClick: ECR.displaySkills },
+                  "Skills"
+                ),
+                " - ",
+                React.createElement(
+                  ChoiceLink,
+                  { onClick: ECR.displayBio },
+                  "Bio"
+                )
               )
             )
           )
@@ -63,6 +91,18 @@
       alert('clicked!');
     }
   });
+
+  ECR.displayPortfolio = function () {
+    alert("You clicked on the portfolio link!");
+  };
+
+  ECR.displaySkills = function () {
+    alert("You clicked on the skills link!");
+  };
+
+  ECR.displayBio = function () {
+    alert("you clicked on the bio link!");
+  };
 
   ECR.initializePage = function () {
     React.render(React.createElement(IntroPage, null), document.getElementById('main-content-area'));
