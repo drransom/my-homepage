@@ -24,14 +24,14 @@ var Navbar = React.createClass({
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav er-navbar-nav">
                 <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
                   <ul className="dropdown-menu er-navbar-item er-about">
                     <li className="er-navbar-list-item"><a href="#" className="er-navbar-list-item-link">About</a></li>
                     <li className="er-navbar-list-item"><a href="http://www.linkedin.com/in/elliotcreed"target="_blank" className="er-navbar-list-item-link">LinkedIn</a></li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
                   <ul className="dropdown-menu er-navbar-item">
                     <li className="er-navbar-list-item">
                       <a className="er-navbar-list-item-link er-portfolio-link" target="_blank" href="https://taskforce.elliotreed.com">TaskForce <span className="smaller-text">(Rails)</span></a>
@@ -73,6 +73,9 @@ ECR.createNavbar = function() {
     <Navbar />,
     document.getElementById('header-wrapper')
   );
+  $('.dropdown-toggle').dropdownHover({
+    delay: 0
+  });
 }
 
 

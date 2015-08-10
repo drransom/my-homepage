@@ -51,7 +51,7 @@
                   { className: "dropdown" },
                   React.createElement(
                     "a",
-                    { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", "data-hover": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false" },
+                    { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false" },
                     "About Me"
                   ),
                   React.createElement(
@@ -82,7 +82,7 @@
                   { className: "dropdown" },
                   React.createElement(
                     "a",
-                    { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", "data-hover": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false" },
+                    { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false" },
                     "Portfolio"
                   ),
                   React.createElement(
@@ -180,5 +180,8 @@
 
   ECR.createNavbar = function () {
     React.render(React.createElement(Navbar, null), document.getElementById('header-wrapper'));
+    $('.dropdown-toggle').dropdownHover({
+      delay: 0
+    });
   };
 })();

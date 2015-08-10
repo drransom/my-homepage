@@ -105,6 +105,7 @@
   };
 
   ECR.initializePage = function () {
+    ECR.createNavbar();
     React.render(React.createElement(IntroPage, null), document.getElementById('main-content-area'));
   };
 })();

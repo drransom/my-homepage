@@ -66,6 +66,7 @@ ECR.displayBio = function() {
 
 
 ECR.initializePage = function() {
+  ECR.createNavbar();
   React.render(
     <IntroPage />,
     document.getElementById('main-content-area')
