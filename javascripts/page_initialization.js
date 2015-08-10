@@ -62,6 +62,7 @@ var IntroPage = React.createClass({
 
 
 ECR.displayPortfolio = function() {
+  ECR.clearDisplayArea();
   alert("You clicked on the portfolio link!");
 };
 
@@ -73,6 +74,9 @@ ECR.displayBio = function() {
   alert("you clicked on the bio link!");
 };
 
+ECR.clearDisplayArea = function() {
+  React.unmountComponentAtNode($('#main-content-area').get(0));
+};
 
 
 ECR.initializePage = function() {
