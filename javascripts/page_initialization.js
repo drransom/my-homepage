@@ -14,6 +14,17 @@ var ChoiceLink = React.createClass({
   }
 });
 
+var ChoiceButtons = React.createClass({
+  render: function() {
+    return (
+      <div className="btn-group btn-group-lg" role="group" aria-label="content options">
+        <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Portfolio</ChoiceLink> -
+        <ChoiceLink onClick={ECR.displaySkills}>Skills</ChoiceLink> - <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
+      </div>
+    );
+  }
+})
+
 var IntroPage = React.createClass({
   render: function() {
     var element = this;
@@ -34,8 +45,7 @@ var IntroPage = React.createClass({
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Portfolio</ChoiceLink> -
-              <ChoiceLink onClick={ECR.displaySkills}>Skills</ChoiceLink> - <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
+              <ChoiceButtons></ChoiceButtons>
             </div>
           </div>
         </div>

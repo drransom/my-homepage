@@ -18,6 +18,38 @@
     }
   });
 
+  var ChoiceButtons = React.createClass({
+    displayName: "ChoiceButtons",
+
+    render: function render() {
+      return React.createElement(
+        "div",
+        { className: "btn-group btn-group-lg", role: "group", "aria-label": "content options" },
+        React.createElement(
+          "span",
+          { className: "subheading-text" },
+          React.createElement(
+            ChoiceLink,
+            { onClick: ECR.displayPortfolio },
+            "Portfolio"
+          ),
+          " -",
+          React.createElement(
+            ChoiceLink,
+            { onClick: ECR.displaySkills },
+            "Skills"
+          ),
+          " - ",
+          React.createElement(
+            ChoiceLink,
+            { onClick: ECR.displayBio },
+            "Bio"
+          )
+        )
+      );
+    }
+  });
+
   var IntroPage = React.createClass({
     displayName: "IntroPage",
 
@@ -58,27 +90,7 @@
             React.createElement(
               "div",
               { className: "col-lg-12" },
-              React.createElement(
-                "span",
-                { className: "subheading-text" },
-                React.createElement(
-                  ChoiceLink,
-                  { onClick: ECR.displayPortfolio },
-                  "Portfolio"
-                ),
-                " -",
-                React.createElement(
-                  ChoiceLink,
-                  { onClick: ECR.displaySkills },
-                  "Skills"
-                ),
-                " - ",
-                React.createElement(
-                  ChoiceLink,
-                  { onClick: ECR.displayBio },
-                  "Bio"
-                )
-              )
+              React.createElement(ChoiceButtons, null)
             )
           )
         )
