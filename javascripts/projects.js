@@ -15,7 +15,8 @@ var ProjectDisplay = React.createClass({
         </div>
         <div className="media-body">
           <h4 className="media-heading">{this.props.projectName}</h4>
-            <span dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
+            <span className="er-project-description"
+            dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
         </div>
       </div>
     );

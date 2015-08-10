@@ -197,3 +197,9 @@ body {
 .er-footer-links > li > a:hover {
   color: #C31F26;
 }
+
+.er-project-description > a:hover,
+.er-project-description > a:focus {
+  text-decoration: none;
+  color: #C31F26;
+}

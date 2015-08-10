@@ -30,7 +30,8 @@
             { className: "media-heading" },
             this.props.projectName
           ),
-          React.createElement("span", { dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
+          React.createElement("span", { className: "er-project-description",
+            dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
         )
       );
     }
