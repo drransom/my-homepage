@@ -104,11 +104,6 @@
     }
   });
 
-  ECR.displayPortfolio = function () {
-    ECR.clearDisplayArea();
-    alert("You clicked on the portfolio link!");
-  };
-
   ECR.displaySkills = function () {
     alert("You clicked on the skills link!");
   };

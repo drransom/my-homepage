@@ -6,7 +6,6 @@ if (window.ECR === undefined) {
 
 var ProjectDisplay = React.createClass({
   render: function() {
-    debugger;
     return (
       <div className="media">
         <div className="media-left">
@@ -22,6 +21,20 @@ var ProjectDisplay = React.createClass({
     );
   }
 });
+
+var ProjectAreaDisplay = React.createClass({
+  render: function() {
+    var displayNodes = this.props.projects.map(function(project) {
+      return <ProjectDisplay imageUrl={project.imageUrl} imgAltText={project.imgAltText}
+              projectName={project.projectName}
+              projectDescription={project.projectDescription} />
+    });
+    return (
+      <div>{displayNodes}</div>
+    );
+  }
+})
+
 var taskForce = {
   imageUrl: 'http://elliot-c-reed-taskforce.s3.amazonaws.com/logo-web.jpg',
   imgAltText: 'TaskForce logo',
@@ -32,13 +45,27 @@ var taskForce = {
     'back end.'
 };
 
-ECR.displayTaskForce = function() {
+var dominionator = {
+  imageurl: "",
+  imgAltText: 'Dominion logo',
+  projectName: 'Dominionator',
+  projectDescription: 'I wasn\'t satisfied with any of the existing selectors for the card game ' +
+    '<a href="https://en.wikipedia.org/wiki/Dominion_(card_game)">Dominion</a>, ' +
+    'so I wrote my own. Users can select expansions on an opt-in or opt-out basis, ' +
+    'veto and unveto individual cards, and view previously slelected tableux ' +
+    'using the browser history. The app is designed to not require a server, ' +
+    'so once the page is loaded an Internet connection is no longer needed.<p>' +
+    'I am making this project without any third party libraries or frameworks, ' +
+    'including jQuery. Everything is pure JavaScript, HTML5, and CSS.'
+};
+
+ECR.displayPortfolio = function() {
+  ECR.clearDisplayArea();
   React.render(
-    <ProjectDisplay imageUrl={taskForce.imageUrl} imgAltText={taskForce.imgAltText}
-     projectName={taskForce.projectName}   projectDescription={taskForce.projectDescription} />,
-   document.getElementById('main-content-area')
- );
-}
+    <ProjectAreaDisplay projects={[taskForce, dominionator]} />,
+    document.getElementById('main-content-area')
+  );
+};
 
 
 })();
