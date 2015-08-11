@@ -7,16 +7,18 @@ if (window.ECR === undefined) {
 var ProjectDisplay = React.createClass({
   render: function() {
     return (
-      <div className="media">
-        <div className="media-left">
-          <a href="#">
-            <img className="media-object" src={this.props.imageUrl} alt={this.props.imgAltText} />
-          </a>
-        </div>
-        <div className="media-body">
-          <h4 className="media-heading">{this.props.projectName}</h4>
-            <span className="er-project-description"
-            dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
+      <div className="col-md-6">
+        <div className="media">
+          <div className="media-left">
+            <a href="#">
+              <img className="media-object" src={this.props.imageUrl} alt={this.props.imgAltText} />
+            </a>
+          </div>
+          <div className="media-body">
+            <h4 className="media-heading">{this.props.projectName}</h4>
+              <span className="er-project-description"
+              dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
+          </div>
         </div>
       </div>
     );
@@ -31,7 +33,7 @@ var ProjectAreaDisplay = React.createClass({
               projectDescription={project.projectDescription} />
     });
     return (
-      <div>{displayNodes}</div>
+      <div className="container-fluid">{displayNodes}</div>
     );
   }
 })

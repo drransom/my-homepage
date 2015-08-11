@@ -12,26 +12,30 @@
     render: function render() {
       return React.createElement(
         "div",
-        { className: "media" },
+        { className: "col-md-6" },
         React.createElement(
           "div",
-          { className: "media-left" },
+          { className: "media" },
           React.createElement(
-            "a",
-            { href: "#" },
-            React.createElement("img", { className: "media-object", src: this.props.imageUrl, alt: this.props.imgAltText })
-          )
-        ),
-        React.createElement(
-          "div",
-          { className: "media-body" },
-          React.createElement(
-            "h4",
-            { className: "media-heading" },
-            this.props.projectName
+            "div",
+            { className: "media-left" },
+            React.createElement(
+              "a",
+              { href: "#" },
+              React.createElement("img", { className: "media-object", src: this.props.imageUrl, alt: this.props.imgAltText })
+            )
           ),
-          React.createElement("span", { className: "er-project-description",
-            dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
+          React.createElement(
+            "div",
+            { className: "media-body" },
+            React.createElement(
+              "h4",
+              { className: "media-heading" },
+              this.props.projectName
+            ),
+            React.createElement("span", { className: "er-project-description",
+              dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
+          )
         )
       );
     }
@@ -48,7 +52,7 @@
       });
       return React.createElement(
         "div",
-        null,
+        { className: "container-fluid" },
         displayNodes
       );
     }
