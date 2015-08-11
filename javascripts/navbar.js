@@ -32,7 +32,7 @@ var Navbar = React.createClass({
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
                   <ul className="dropdown-menu er-navbar-item">
                     <li className="er-navbar-list-item">
                       <a className="er-navbar-list-item-link er-portfolio-link" target="_blank" href="https://taskforce.elliotreed.com">TaskForce <span className="smaller-text">(Rails)</span></a>

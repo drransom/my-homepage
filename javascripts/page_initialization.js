@@ -18,7 +18,7 @@ var ChoiceButtons = React.createClass({
   render: function() {
     return (
       <div role="group" aria-label="content options">
-        <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Portfolio</ChoiceLink>&nbsp;
+        <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Projects</ChoiceLink>&nbsp;
         <ChoiceLink onClick={ECR.displaySkills}>Skills</ChoiceLink> <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
       </div>
     );

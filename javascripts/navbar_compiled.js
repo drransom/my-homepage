@@ -84,7 +84,7 @@
                   React.createElement(
                     "a",
                     { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false" },
-                    "Portfolio"
+                    "Projects"
                   ),
                   React.createElement(
                     "ul",

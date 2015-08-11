@@ -31,7 +31,7 @@
           React.createElement(
             ChoiceLink,
             { onClick: ECR.displayPortfolio },
-            "Portfolio"
+            "Projects"
           ),
           " ",
           React.createElement(
