@@ -155,11 +155,13 @@ body {
   font-size: 700%;
 }
 
+
 .er-subheading {
   font-size: 200%;
   /*line-height: 0.5;*/
   text-align: center;
 }
+
 .er-subheading span {
   display: inline-block;
   position: relative;
@@ -184,6 +186,11 @@ body {
   margin-left: 15px;
 }
 
+@media (max-width: 500px) {
+  .er-name {
+    font-size: 550%;
+  }
+}
 
 /* Sticky footer styles
 -------------------------------------------------- */
