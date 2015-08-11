@@ -10,6 +10,16 @@
     displayName: "ProjectDisplay",
 
     render: function render() {
+      var heading;
+      if (this.props.projectName) {
+        heading = React.createElement(
+          "h4",
+          null,
+          this.props.projectName
+        );
+      } else {
+        heading = null;
+      };
       return React.createElement(
         "div",
         { className: "col-md-6" },
@@ -18,6 +28,7 @@
           { href: this.props.projectLink },
           React.createElement("img", { className: "img-responsive", src: this.props.imageUrl, alt: this.props.imgAltText })
         ),
+        heading,
         React.createElement("span", { className: "er-project-description",
           dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
       );
@@ -45,8 +56,8 @@
   var taskForce = {
     imageUrl: 'http://elliot-c-reed-taskforce.s3.amazonaws.com/logo-web.jpg',
     imgAltText: 'TaskForce logo',
-    projectName: 'TaskForce',
-    projectDescription: 'TaskForce is a contractor-hiring and task-completion app ' + 'inspired by TaskRabbit. TaskForce is built on a <a href="http://backbonejs.org">' + 'Backbone</a> front end and a <a href="http://rubyonrails.org/">Rails</a> ' + 'back end.',
+    projectName: '',
+    projectDescription: '<strong>TaskForce</strong> is a contractor-hiring and task-completion app ' + 'inspired by TaskRabbit. TaskForce is built on a <a href="http://backbonejs.org">' + 'Backbone</a> front end and a <a href="http://rubyonrails.org/">Rails</a> ' + 'back end.',
     projectLink: "https://taskforce.elliotreed.com"
   };
 
