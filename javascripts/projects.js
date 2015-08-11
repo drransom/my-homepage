@@ -52,7 +52,8 @@ var taskForce = {
     'inspired by TaskRabbit. TaskForce is built on a <a target="_blank" ' +
     'href="http://backbonejs.org">Backbone</a> front end and a '+
     '<a target="_blank" href="http://rubyonrails.org/">Rails</a> ' +
-    'back end.',
+    'back end. I made extensive use of Backbone composite views to minimize ' +
+    'DOM re-rendering.<p><br>Try giving a task a poor rating!',
   projectLink: 'https://taskforce.elliotreed.com',
   sourceUrl: 'http://github.com/drransom/taskforce'
 };
@@ -61,15 +62,14 @@ var dominionator = {
   imageUrl: "http://elliot-c-reed-taskforce.s3.amazonaws.com/dominion-logo.png",
   imgAltText: 'Dominion logo',
   projectName: 'Dominionator',
-  projectDescription: 'I wasn\'t satisfied with any of the existing selectors for the card game ' +
+  projectDescription: 'I love the card game ' +
     '<a target="_blank" href="https://en.wikipedia.org/wiki/Dominion_(card_game)">' +
-    'Dominion</a>, so I wrote my own. Users can select expansions on an opt-in ' +
-    'or opt-out basis, veto and unveto individual cards, and view previously ' +
-    'selected tableux using the browser history. The app is designed to not ' +
-    'require a server, so once the page is loaded an Internet connection ' +
-    'is no longer needed.<p><br>' +
-    'I am making this project without any third party libraries or frameworks, ' +
-    'including jQuery. Everything is pure JavaScript, HTML5, and CSS.',
+    'Dominion</a>, and I wasn\'t satisfied with any of the existing selectors for the card game ' +
+    'so I\'m making my own. I\'m not using an third party libraries or ' +
+    'frameworks, including jQuery. Everything is pure JavaScript, HTML5, and CSS.' +
+    '<p><br>The project isn\'t production-ready, but you can find a demo of ' +
+    'the current version <a target="_blank" ' +
+    'href="https://drransom.github.io/Dominionator">here</a>.',
   projectLink: 'https://drransom.github.io/Dominionator',
   sourceUrl: 'http://github.com/drransom/dominionator'
 };
@@ -91,10 +91,25 @@ var asteroids = {
   sourceUrl: 'http://github.com/drransom/asteroids'
 };
 
+var chess = {
+  imageUrl: "",
+  imgAltText: 'Chess logl',
+  projectName: 'Command Line Chess',
+  projectDescription: 'Written in Ruby, this command line game supports ' +
+    'two human players or a human-AI match against a <a target="_blank" ' +
+    'href="https://en.wikipedia.org/wiki/Greedy_algorithm">greedy algorithm</a>. ' +
+    'The game and board are UI-agnostic, so the API is ready for use ' +
+    'beyond the command ' +
+    'line.<p><br>I implemented the complete rule set, and my comprehensive ' +
+    'test suite validates even the most most obscure edge cases.',
+  projectLink: 'https://github.com/drransom/chess',
+  sourceUrl: 'https://github.com/drransom/chess'
+};
+
 ECR.displayPortfolio = function() {
   ECR.clearDisplayArea();
   React.render(
-    <ProjectAreaDisplay projects={[taskForce, dominionator, asteroids]} />,
+    <ProjectAreaDisplay projects={[taskForce, asteroids, chess, dominionator]} />,
     document.getElementById('main-content-area')
   );
 };
