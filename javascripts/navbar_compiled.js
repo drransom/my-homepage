@@ -101,18 +101,13 @@
                           { className: "smaller-text" },
                           "(Rails)"
                         )
-                      )
-                    ),
-                    React.createElement(
-                      "li",
-                      { className: "er-navbar-list-item" },
+                      ),
                       React.createElement(
                         "a",
-                        { href: "http://www.github.com/drransom/TaskForce", target: "_blank", className: "er-navbar-list-item-link er-portfolio-source" },
+                        { href: "http://www.github.com/drransom/TaskForce", target: "_blank", className: "er-navbar-list-item-link er-portfolio-source smaller-text" },
                         "Source"
                       )
                     ),
-                    React.createElement("li", { role: "separator", className: "divider" }),
                     React.createElement(
                       "li",
                       { className: "er-navbar-list-item" },
@@ -125,18 +120,13 @@
                           { className: "smaller-text" },
                           "(HTML5 Canvas)"
                         )
-                      )
-                    ),
-                    React.createElement(
-                      "li",
-                      { className: "er-navbar-list-item" },
+                      ),
                       React.createElement(
                         "a",
-                        { href: "http://www.github.com/drransom/Asteroids", target: "_blank", className: "er-navbar-list-item-link er-portfolio-source" },
+                        { href: "http://www.github.com/drransom/Asteroids", target: "_blank", className: "er-navbar-list-item-link er-portfolio-source smaller-text" },
                         "Source"
                       )
                     ),
-                    React.createElement("li", { role: "separator", className: "divider" }),
                     React.createElement(
                       "li",
                       { className: "er-navbar-list-item" },
@@ -149,14 +139,10 @@
                           { className: "smaller-text" },
                           "(Ruby)"
                         )
-                      )
-                    ),
-                    React.createElement(
-                      "li",
-                      null,
+                      ),
                       React.createElement(
                         "a",
-                        { href: "http://www.github.com/drransom/chess", target: "_blank", className: "er-navbar-list-item-link er-portfolio-source" },
+                        { href: "http://www.github.com/drransom/chess", target: "_blank", className: "er-navbar-list-item-link er-portfolio-source smaller-text" },
                         "Source"
                       )
                     )

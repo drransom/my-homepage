@@ -36,23 +36,15 @@ var Navbar = React.createClass({
                   <ul className="dropdown-menu er-navbar-item">
                     <li className="er-navbar-list-item">
                       <a className="er-navbar-list-item-link er-portfolio-link" target="_blank" href="https://taskforce.elliotreed.com">TaskForce <span className="smaller-text">(Rails)</span></a>
+                      <a href="http://www.github.com/drransom/TaskForce" target="_blank" className="er-navbar-list-item-link er-portfolio-source smaller-text">Source</a>
                     </li>
-                    <li className="er-navbar-list-item">
-                      <a href="http://www.github.com/drransom/TaskForce" target="_blank" className="er-navbar-list-item-link er-portfolio-source">Source</a>
-                    </li>
-                    <li role="separator" className="divider"></li>
                     <li className="er-navbar-list-item">
                       <a href="http://drransom.github.io/Asteroids" target="_blank" className="er-navbar-list-item-link er-portfolio-link">Asteroids <span className="smaller-text">(HTML5 Canvas)</span></a>
+                      <a href="http://www.github.com/drransom/Asteroids" target="_blank" className="er-navbar-list-item-link er-portfolio-source smaller-text">Source</a>
                     </li>
-                    <li className="er-navbar-list-item">
-                        <a href="http://www.github.com/drransom/Asteroids" target="_blank" className="er-navbar-list-item-link er-portfolio-source">Source</a>
-                    </li>
-                    <li role="separator" className="divider"></li>
                     <li className="er-navbar-list-item">
                       <a href="http://www.github.com/drransom/chess" target="_blank" className="er-navbar-list-item-link er-portfolio-link">Command Line Chess <span className="smaller-text">(Ruby)</span></a>
-                    </li>
-                    <li>
-                      <a href="http://www.github.com/drransom/chess" target="_blank" className="er-navbar-list-item-link er-portfolio-source">Source</a>
+                      <a href="http://www.github.com/drransom/chess" target="_blank" className="er-navbar-list-item-link er-portfolio-source smaller-text">Source</a>
                     </li>
                   </ul>
                 </li>

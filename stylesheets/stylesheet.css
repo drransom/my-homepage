@@ -7,7 +7,7 @@ body {
 }
 
 .header-wrapper {
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .dropdown-menu > li.er-navbar-list-item {
