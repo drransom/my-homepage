@@ -36,11 +36,13 @@ body {
 
 .dropdown-menu > li > .er-navbar-list-item-link {
   padding: 3px 10px 3px 10px;
-  color: white
+  color: white;
 }
 
-.dropdown-menu > li > .er-navbar-list-item-link:hover {
+.dropdown-menu > li > .er-navbar-list-item-link:hover,
+.dropdown-menu > li > .er-navbar-list-item-link:active {
   color: #C31F26;
+  background: inherit;
 }
 
 

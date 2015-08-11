@@ -37,7 +37,7 @@
               ),
               React.createElement(
                 "a",
-                { className: "navbar-brand er-navbar-brand", href: "#" },
+                { className: "navbar-brand er-navbar-brand", href: "http://www.elliotreed.com" },
                 "Elliot Reed"
               )
             ),
