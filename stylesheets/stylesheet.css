@@ -142,6 +142,32 @@ body {
 }
 
 
+/*Button styles*/
+
+.er-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  transition: 0.5s ease
+}
+
+.er-btn:hover,
+.er-btn:active,
+.er-btn:focus {
+  background-color: #C31F26;
+  border: 1px solid #C31F26;
+  color: #ffffff
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    }
+
 /*Main Page styles
 --------------------------------------------------- */
 
@@ -228,6 +254,28 @@ body {
 
 .er-project-area {
   padding-top: 50px;
+}
+
+.er-project-heading {
+  text-align: center;
+}
+
+.er-project-description {
+  text-align: justify;
+  display: inline-block;
+}
+
+
+
+a.gray-text  {
+  color: gray;
+}
+
+a.gray-text:hover,
+a.gray-text:active,
+a.gray-text:focus {
+  color: #C31F26;
+  text-decoration: none;
 }
 
 .er-project-description > a:hover,

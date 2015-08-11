@@ -7,7 +7,7 @@ if (window.ECR === undefined) {
 var ChoiceLink = React.createClass({
   render: function() {
     return (
-      <button type="button" className="btn er-btn" onClick={this.props.onClick}>
+      <button type="button" className="btn er-btn btn-xlarge" onClick={this.props.onClick}>
         {this.props.children}
       </button>
     );
@@ -17,9 +17,9 @@ var ChoiceLink = React.createClass({
 var ChoiceButtons = React.createClass({
   render: function() {
     return (
-      <div className="btn-group btn-group-lg" role="group" aria-label="content options">
-        <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Portfolio</ChoiceLink> -
-        <ChoiceLink onClick={ECR.displaySkills}>Skills</ChoiceLink> - <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
+      <div role="group" aria-label="content options">
+        <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Portfolio</ChoiceLink>&nbsp;
+        <ChoiceLink onClick={ECR.displaySkills}>Skills</ChoiceLink> <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
       </div>
     );
   }

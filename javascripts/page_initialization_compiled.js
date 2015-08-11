@@ -12,7 +12,7 @@
     render: function render() {
       return React.createElement(
         "button",
-        { type: "button", className: "btn er-btn", onClick: this.props.onClick },
+        { type: "button", className: "btn er-btn btn-xlarge", onClick: this.props.onClick },
         this.props.children
       );
     }
@@ -24,7 +24,7 @@
     render: function render() {
       return React.createElement(
         "div",
-        { className: "btn-group btn-group-lg", role: "group", "aria-label": "content options" },
+        { role: "group", "aria-label": "content options" },
         React.createElement(
           "span",
           { className: "subheading-text" },
@@ -33,13 +33,13 @@
             { onClick: ECR.displayPortfolio },
             "Portfolio"
           ),
-          " -",
+          " ",
           React.createElement(
             ChoiceLink,
             { onClick: ECR.displaySkills },
             "Skills"
           ),
-          " - ",
+          " ",
           React.createElement(
             ChoiceLink,
             { onClick: ECR.displayBio },
