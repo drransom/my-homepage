@@ -10,7 +10,7 @@ var ProjectDisplay = React.createClass({
       <div className="col-md-6">
         <div className="media">
           <div className="media-left">
-            <a href="#">
+            <a href={this.props.projectLink}>
               <img className="media-object" src={this.props.imageUrl} alt={this.props.imgAltText} />
             </a>
           </div>
@@ -30,7 +30,8 @@ var ProjectAreaDisplay = React.createClass({
     var displayNodes = this.props.projects.map(function(project) {
       return <ProjectDisplay imageUrl={project.imageUrl} imgAltText={project.imgAltText}
               projectName={project.projectName}
-              projectDescription={project.projectDescription} />
+              projectDescription={project.projectDescription}
+              projectLink={project.projectLink} />
     });
     return (
       <div className="container-fluid">{displayNodes}</div>
@@ -45,7 +46,8 @@ var taskForce = {
   projectDescription: 'TaskForce is a contractor-hiring and task-completion app ' +
     'inspired by TaskRabbit. TaskForce is built on a <a href="http://backbonejs.org">' +
     'Backbone</a> front end and a <a href="http://rubyonrails.org/">Rails</a> ' +
-    'back end.'
+    'back end.',
+  projectLink: "https://taskforce.elliotreed.com"
 };
 
 var dominionator = {
@@ -59,7 +61,8 @@ var dominionator = {
     'using the browser history. The app is designed to not require a server, ' +
     'so once the page is loaded an Internet connection is no longer needed.<p>' +
     'I am making this project without any third party libraries or frameworks, ' +
-    'including jQuery. Everything is pure JavaScript, HTML5, and CSS.'
+    'including jQuery. Everything is pure JavaScript, HTML5, and CSS.',
+  projectLink: "#"
 };
 
 ECR.displayPortfolio = function() {
