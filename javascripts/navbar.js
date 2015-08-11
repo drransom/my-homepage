@@ -12,7 +12,8 @@ var Navbar = React.createClass({
           <div className="container-fluid">
 
             <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#er-navigation" aria-expanded="false">
                 <span className="sr-only">Toggle navigation</span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
@@ -21,7 +22,7 @@ var Navbar = React.createClass({
               <a className="navbar-brand er-navbar-brand" href="#">Elliot Reed</a>
             </div>
 
-            <div className="collapse navbar-collapse">
+            <div className="collapse navbar-collapse" id="er-navigation">
               <ul className="nav navbar-nav er-navbar-nav">
                 <li className="dropdown">
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Me</a>
@@ -73,9 +74,9 @@ ECR.createNavbar = function() {
     <Navbar />,
     document.getElementById('header-wrapper')
   );
-  // $('.dropdown-toggle').dropdownHover({
-  //   delay: 0
-  // });
+  $('.dropdown-toggle').dropdownHover({
+    delay: 0
+  });
 }
 
 

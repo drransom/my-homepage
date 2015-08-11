@@ -24,7 +24,8 @@
               { className: "navbar-header" },
               React.createElement(
                 "button",
-                { type: "button", className: "navbar-toggle collapsed", "data-toggle": "collapse", "aria-expanded": "false" },
+                { type: "button", className: "navbar-toggle collapsed", "data-toggle": "collapse",
+                  "data-target": "#er-navigation", "aria-expanded": "false" },
                 React.createElement(
                   "span",
                   { className: "sr-only" },
@@ -42,7 +43,7 @@
             ),
             React.createElement(
               "div",
-              { className: "collapse navbar-collapse" },
+              { className: "collapse navbar-collapse", id: "er-navigation" },
               React.createElement(
                 "ul",
                 { className: "nav navbar-nav er-navbar-nav" },
@@ -180,8 +181,8 @@
 
   ECR.createNavbar = function () {
     React.render(React.createElement(Navbar, null), document.getElementById('header-wrapper'));
-    // $('.dropdown-toggle').dropdownHover({
-    //   delay: 0
-    // });
+    $('.dropdown-toggle').dropdownHover({
+      delay: 0
+    });
   };
 })();

@@ -118,8 +118,21 @@ body {
 }
 
 .navbar-brand.er-navbar-brand:hover {
-  color: #ffffff;
-  color: #C31F26
+  color: #C31F26;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > .er-navbar-list-item-link {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > .er-navbar-list-item-link.er-portfolio-source {
+      color: gray;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > .er-navbar-list-item-link:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > .er-navbar-list-item-link:active {
+    color: #C31F26;
+  }
 }
 
 
@@ -146,7 +159,7 @@ body {
   position: relative;
 }
 
-/*.er-subheading span:before,
+.er-subheading span:before,
 .er-subheading span:after {
   content: "";
   position: absolute;
@@ -163,7 +176,7 @@ body {
 .er-subheading span:after {
   left: 100%;
   margin-left: 15px;
-}*/
+}
 
 
 /* Sticky footer styles
