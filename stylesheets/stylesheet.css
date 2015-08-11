@@ -6,6 +6,10 @@ body {
   color: white
 }
 
+.header-wrapper {
+  min-height: 200px;
+}
+
 .dropdown-menu > li.er-navbar-list-item {
   display: block;
   clear: both;
@@ -211,6 +215,12 @@ body {
 
 .er-footer-links > li > a:hover {
   color: #C31F26;
+}
+
+/* Project description styles */
+
+.er-project-area {
+  padding-top: 50px;
 }
 
 .er-project-description > a:hover,

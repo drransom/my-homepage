@@ -47,7 +47,7 @@
       });
       return React.createElement(
         "div",
-        { className: "container-fluid" },
+        { className: "container-fluid er-project-area" },
         displayNodes
       );
     }

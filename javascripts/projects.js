@@ -34,7 +34,7 @@ var ProjectAreaDisplay = React.createClass({
               projectLink={project.projectLink} />
     });
     return (
-      <div className="container-fluid">{displayNodes}</div>
+      <div className="container-fluid er-project-area">{displayNodes}</div>
     );
   }
 })
