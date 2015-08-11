@@ -57,13 +57,13 @@
                   ),
                   React.createElement(
                     "ul",
-                    { className: "dropdown-menu er-navbar-item er-about" },
+                    { className: "dropdown-menu er-navbar-item" },
                     React.createElement(
                       "li",
                       { className: "er-navbar-list-item" },
                       React.createElement(
                         "a",
-                        { href: "#", className: "er-navbar-list-item-link" },
+                        { href: "javascript:void(0)", onClick: ECR.displayBio, className: "er-navbar-list-item-link" },
                         "About"
                       )
                     ),
@@ -153,7 +153,7 @@
                   null,
                   React.createElement(
                     "a",
-                    { href: "#", className: "er-navbar-item" },
+                    { target: "_blank", href: "mailto:elliotreed2@gmail.com", className: "er-navbar-item" },
                     "Contact"
                   )
                 )

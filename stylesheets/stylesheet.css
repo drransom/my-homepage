@@ -49,7 +49,6 @@ body {
   background: inherit;
 }
 
-
 .dropdown-menu > li > a.er-portfolio-link {
   display: inline-block;
   padding-bottom: 0;
@@ -140,7 +139,6 @@ body {
     color: #C31F26;
   }
 }
-
 
 /*Button styles*/
 
@@ -265,8 +263,6 @@ body {
   display: inline-block;
 }
 
-
-
 a.gray-text  {
   color: gray;
 }
@@ -282,4 +278,33 @@ a.gray-text:focus {
 .er-project-description > a:focus {
   text-decoration: none;
   color: #C31F26;
+}
+
+.biography {
+  text-align: left;
+}
+
+.er-fun-fact-list {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.er-fun-fact {
+  padding-left: 0px;
+  font-size: 125%;
+}
+
+.er-fun-fact > a:hover,
+.er-fun-fact > a:focus {
+  text-decoration: none;
+  color: #C31F26;
+}
+
+.er-about {
+  text-align: left;
+  font-size: 700%;
+}
+
+.er-bio-start {
+  text-align: left;
 }

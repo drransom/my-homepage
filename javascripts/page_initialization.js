@@ -32,7 +32,7 @@ var IntroPage = React.createClass({
         <section>
         <div className="container className = er-main-page">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-4">
               <span className="er-name">
                 Elliot Reed
               </span>
@@ -52,12 +52,6 @@ var IntroPage = React.createClass({
       </section>
     );
   },
-  onClickCapture: function(event) {
-    alert('clicked!');
-  },
-  onClick: function(event) {
-    alert('clicked!');
-  }
 });
 
 ECR.displaySkills = function() {
