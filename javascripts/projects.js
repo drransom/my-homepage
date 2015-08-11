@@ -11,6 +11,9 @@ var ProjectDisplay = React.createClass({
         <a href={this.props.projectLink}>
           <img className="img-responsive" src={this.props.imageUrl} alt={this.props.imgAltText} />
         </a>
+        if (this.props.projectName) {
+          <h4>{this.props.projectName}</h4>
+        }
         <span className="er-project-description"
         dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
       </div>
@@ -35,8 +38,8 @@ var ProjectAreaDisplay = React.createClass({
 var taskForce = {
   imageUrl: 'http://elliot-c-reed-taskforce.s3.amazonaws.com/logo-web.jpg',
   imgAltText: 'TaskForce logo',
-  projectName: 'TaskForce',
-  projectDescription: 'TaskForce is a contractor-hiring and task-completion app ' +
+  projectName: '',
+  projectDescription: '<strong>TaskForce<strong> is a contractor-hiring and task-completion app ' +
     'inspired by TaskRabbit. TaskForce is built on a <a href="http://backbonejs.org">' +
     'Backbone</a> front end and a <a href="http://rubyonrails.org/">Rails</a> ' +
     'back end.',
