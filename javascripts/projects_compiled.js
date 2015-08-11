@@ -14,29 +14,12 @@
         "div",
         { className: "col-md-6" },
         React.createElement(
-          "div",
-          { className: "media" },
-          React.createElement(
-            "div",
-            { className: "media-left" },
-            React.createElement(
-              "a",
-              { href: this.props.projectLink },
-              React.createElement("img", { className: "media-object", src: this.props.imageUrl, alt: this.props.imgAltText })
-            )
-          ),
-          React.createElement(
-            "div",
-            { className: "media-body" },
-            React.createElement(
-              "h4",
-              { className: "media-heading" },
-              this.props.projectName
-            ),
-            React.createElement("span", { className: "er-project-description",
-              dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
-          )
-        )
+          "a",
+          { href: this.props.projectLink },
+          React.createElement("img", { className: "img-responsive", src: this.props.imageUrl, alt: this.props.imgAltText })
+        ),
+        React.createElement("span", { className: "er-project-description",
+          dangerouslySetInnerHTML: { __html: this.props.projectDescription } })
       );
     }
   });

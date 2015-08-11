@@ -8,18 +8,11 @@ var ProjectDisplay = React.createClass({
   render: function() {
     return (
       <div className="col-md-6">
-        <div className="media">
-          <div className="media-left">
-            <a href={this.props.projectLink}>
-              <img className="media-object" src={this.props.imageUrl} alt={this.props.imgAltText} />
-            </a>
-          </div>
-          <div className="media-body">
-            <h4 className="media-heading">{this.props.projectName}</h4>
-              <span className="er-project-description"
-              dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
-          </div>
-        </div>
+        <a href={this.props.projectLink}>
+          <img className="img-responsive" src={this.props.imageUrl} alt={this.props.imgAltText} />
+        </a>
+        <span className="er-project-description"
+        dangerouslySetInnerHTML={{__html: this.props.projectDescription}} />
       </div>
     );
   }
