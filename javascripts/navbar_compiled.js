@@ -180,8 +180,8 @@
 
   ECR.createNavbar = function () {
     React.render(React.createElement(Navbar, null), document.getElementById('header-wrapper'));
-    $('.dropdown-toggle').dropdownHover({
-      delay: 0
-    });
+    // $('.dropdown-toggle').dropdownHover({
+    //   delay: 0
+    // });
   };
 })();

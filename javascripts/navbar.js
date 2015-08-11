@@ -73,9 +73,9 @@ ECR.createNavbar = function() {
     <Navbar />,
     document.getElementById('header-wrapper')
   );
-  $('.dropdown-toggle').dropdownHover({
-    delay: 0
-  });
+  // $('.dropdown-toggle').dropdownHover({
+  //   delay: 0
+  // });
 }
 
 
