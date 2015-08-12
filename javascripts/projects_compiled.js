@@ -96,7 +96,7 @@
     imageUrl: "",
     imgAltText: 'Chess logl',
     projectName: 'Command Line Chess',
-    projectDescription: 'Written in Ruby, this command line game supports ' + 'two human players or a human-AI match against a <a target="_blank" ' + 'href="https://en.wikipedia.org/wiki/Greedy_algorithm">Greedy algorithm</a>. ' + 'The game and board are UI-agnostic, so the API is ready for use ' + 'beyond the command ' + 'line.<p><br>I implemented the complete rule set, and my comprehensive ' + 'test suite validates even the most most obscure edge cases.',
+    projectDescription: 'Written in Ruby, this command line game supports ' + 'two human players or a human-AI match against a <a target="_blank" ' + 'href="https://en.wikipedia.org/wiki/Greedy_algorithm">greedy algorithm</a>. ' + 'The game and board are UI-agnostic, so the API is ready for use ' + 'beyond the command ' + 'line.<p><br>I implemented the complete rule set, and my comprehensive ' + 'test suite validates even the most most obscure edge cases.',
     projectLink: 'https://github.com/drransom/chess',
     sourceUrl: 'https://github.com/drransom/chess'
   };
