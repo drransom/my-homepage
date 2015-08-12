@@ -34,12 +34,8 @@
             "Projects"
           ),
           " ",
-          React.createElement(
-            ChoiceLink,
-            { onClick: ECR.displaySkills },
-            "Skills"
-          ),
-          " ",
+          React.createElement("span", { className: "glyphicon glyphicon-certificate" }),
+          " ",
           React.createElement(
             ChoiceLink,
             { onClick: ECR.displayBio },
@@ -95,12 +91,6 @@
           )
         )
       );
-    },
-    onClickCapture: function onClickCapture(event) {
-      alert('clicked!');
-    },
-    onClick: function onClick(event) {
-      alert('clicked!');
     }
   });
 

@@ -19,6 +19,7 @@ var ChoiceButtons = React.createClass({
     return (
       <div role="group" aria-label="content options">
         <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Projects</ChoiceLink>&nbsp;
+        <span className="glyphicon glyphicon-certificate" />&nbsp;
         <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
       </div>
     );
@@ -32,7 +33,7 @@ var IntroPage = React.createClass({
         <section>
         <div className="container className = er-main-page">
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-12">
               <span className="er-name">
                 Elliot Reed
               </span>
@@ -51,8 +52,12 @@ var IntroPage = React.createClass({
         </div>
       </section>
     );
-  },
+  }
 });
+
+ECR.displaySkills = function() {
+  alert("You clicked on the skills link!");
+};
 
 ECR.clearDisplayArea = function() {
   React.unmountComponentAtNode($('#main-content-area').get(0));
