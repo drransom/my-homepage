@@ -21,7 +21,7 @@
         alt: 'Dominion logo' });
 
     var chessLogo = img({ className: 'img-responsive center-block',
-        src: 'http://elliot-c-reed-taskforce.s3.amazonaws.com/chess-logo-tmp.png',
+        src: 'http://elliot-c-reed-taskforce.s3.amazonaws.com/chess-logo-temp.png',
         alt: 'Chess logo' });
 
     var taskForceLogo = img({ className: 'img-responsive center-block',
@@ -29,7 +29,7 @@
         alt: 'TsakForce logo' });
 
     ECR.photos = {
-        domionion: dominionLogo,
+        dominion: dominionLogo,
         chess: chessLogo,
         asteroids: asteroidsLogo,
         taskForce: taskForceLogo,

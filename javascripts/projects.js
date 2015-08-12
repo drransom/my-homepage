@@ -19,7 +19,7 @@ var ProjectDisplay = React.createClass({
     return (
       <div className="col-md-6 er-project-detail">
         <a href={this.props.projectLink}>
-          <img className="img-responsive center-block" src={this.props.imageUrl} alt={this.props.imgAltText} />
+          {this.props.image}
         </a>
         {heading}
         <span className="er-project-description"
@@ -32,7 +32,7 @@ var ProjectDisplay = React.createClass({
 var ProjectAreaDisplay = React.createClass({
   render: function() {
     var displayNodes = this.props.projects.map(function(project) {
-      return <ProjectDisplay imageUrl={project.imageUrl} imgAltText={project.imgAltText}
+      return <ProjectDisplay image={project.image}
               projectName={project.projectName}
               projectDescription={project.projectDescription}
               projectLink={project.projectLink}
@@ -45,7 +45,7 @@ var ProjectAreaDisplay = React.createClass({
 })
 
 var taskForce = {
-  imageUrl: 'http://elliot-c-reed-taskforce.s3.amazonaws.com/logo-web.jpg',
+  image: ECR.photos.taskForce,
   imgAltText: 'TaskForce logo',
   projectName: 'TaskForce',
   projectDescription: 'TaskForce is a contractor-hiring and task-completion app ' +
@@ -59,8 +59,7 @@ var taskForce = {
 };
 
 var dominionator = {
-  imageUrl: "http://elliot-c-reed-taskforce.s3.amazonaws.com/dominion-logo.png",
-  imgAltText: 'Dominion logo',
+  image: ECR.photos.dominion,
   projectName: 'Dominionator',
   projectDescription: 'I love the card game ' +
     '<a target="_blank" href="https://en.wikipedia.org/wiki/Dominion_(card_game)">' +
@@ -75,8 +74,7 @@ var dominionator = {
 };
 
 var asteroids = {
-  imageUrl: "http://elliot-c-reed-taskforce.s3.amazonaws.com/asteroids-logo.png",
-  imgAltText: 'Asteroids logo',
+  image: ECR.photos.asteroids,
   projectName: 'Asteroids',
   projectDescription: 'My version of the <a target="_blank" ' +
   'href="https://en.wikipedia.org/wiki/Asteroids_(video_game)">classic Atari ' +
@@ -92,8 +90,7 @@ var asteroids = {
 };
 
 var chess = {
-  imageUrl: "",
-  imgAltText: 'Chess logo',
+  image: ECR.photos.chess,
   projectName: 'Command Line Chess',
   projectDescription: 'Written in Ruby, this command line game supports ' +
     'two human players or a human-AI match against a <a target="_blank" ' +
