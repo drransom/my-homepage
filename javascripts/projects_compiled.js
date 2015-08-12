@@ -33,7 +33,7 @@
       };
       return React.createElement(
         "div",
-        { className: "col-md-6" },
+        { className: "col-md-6 er-project-detail" },
         React.createElement(
           "a",
           { href: this.props.projectLink },

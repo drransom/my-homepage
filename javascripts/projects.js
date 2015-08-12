@@ -17,7 +17,7 @@ var ProjectDisplay = React.createClass({
       heading = null;
     };
     return (
-      <div className="col-md-6">
+      <div className="col-md-6 er-project-detail">
         <a href={this.props.projectLink}>
           <img className="img-responsive center-block" src={this.props.imageUrl} alt={this.props.imgAltText} />
         </a>
