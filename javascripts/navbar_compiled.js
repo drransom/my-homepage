@@ -91,6 +91,15 @@
                     { className: "dropdown-menu er-navbar-item" },
                     React.createElement(
                       "li",
+                      { ClassName: "er-navbar-list-item" },
+                      React.createElement(
+                        "a",
+                        { className: "er-navbar-list-item-link er-portfolio-link", target: "_blank", href: "javascript:void(0)", onClick: ECR.displayPortfolio },
+                        "All Projects"
+                      )
+                    ),
+                    React.createElement(
+                      "li",
                       { className: "er-navbar-list-item" },
                       React.createElement(
                         "a",

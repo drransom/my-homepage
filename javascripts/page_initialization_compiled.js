@@ -94,10 +94,6 @@
     }
   });
 
-  ECR.displaySkills = function () {
-    alert("You clicked on the skills link!");
-  };
-
   ECR.clearDisplayArea = function () {
     React.unmountComponentAtNode($('#main-content-area').get(0));
   };
