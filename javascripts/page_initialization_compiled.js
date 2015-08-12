@@ -39,7 +39,7 @@
           React.createElement(
             ChoiceLink,
             { onClick: ECR.displayBio },
-            "Bio"
+            "About"
           )
         )
       );
@@ -56,7 +56,16 @@
         null,
         React.createElement(
           "div",
-          { className: "container className = er-main-page" },
+          { className: "container er-main-page" },
+          React.createElement(
+            "div",
+            { className: "row" },
+            React.createElement(
+              "div",
+              { className: "col-lg-12" },
+              ECR.photos.elliotProfile
+            )
+          ),
           React.createElement(
             "div",
             { className: "row" },

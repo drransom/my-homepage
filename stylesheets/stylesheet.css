@@ -191,29 +191,18 @@ body {
   position: relative;
 }
 
-.er-subheading span:before,
-.er-subheading span:after {
-  content: "";
-  position: absolute;
-  height: 10px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-  top: 0;
-  width: 150px;
-}
-.er-subheading span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.er-subheading span:after {
-  left: 100%;
-  margin-left: 15px;
-}
-
 @media (max-width: 500px) {
   .er-name {
     font-size: 550%;
   }
+}
+
+/* Profile photo styles */
+
+img.er-profile-photo {
+  border: 1px solid black;
+  border-radius: 100px 100px 100px 100px;
+  min-height: 200px;
 }
 
 /* Sticky footer styles

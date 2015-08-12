@@ -20,7 +20,7 @@ var ChoiceButtons = React.createClass({
       <div role="group" aria-label="content options">
         <span className="subheading-text"><ChoiceLink onClick={ECR.displayPortfolio}>Projects</ChoiceLink>&nbsp;
         <span className="glyphicon glyphicon-certificate" />&nbsp;
-        <ChoiceLink onClick={ECR.displayBio}>Bio</ChoiceLink></span>
+        <ChoiceLink onClick={ECR.displayBio}>About</ChoiceLink></span>
       </div>
     );
   }
@@ -31,7 +31,12 @@ var IntroPage = React.createClass({
     var element = this;
     return (
         <section>
-        <div className="container className = er-main-page">
+        <div className="container er-main-page">
+          <div className="row">
+            <div className="col-lg-12">
+            {ECR.photos.elliotProfile}
+            </div>
+          </div>
           <div className="row">
             <div className="col-lg-12">
               <span className="er-name">
