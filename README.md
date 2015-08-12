@@ -1,3 +1,3 @@
 # my-homepage
-There's nothing on elliotreed.com yet, but there will be soon! It will be
-my portfolio site.
+This contains the source for [elliotreed.com][www.elliotreed.com]. It's a
+static website built using React.

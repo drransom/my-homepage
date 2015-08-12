@@ -66,6 +66,7 @@ ECR.clearDisplayArea = function() {
 
 
 ECR.initializePage = function() {
+  ECR.loadImages();
   ECR.createNavbar();
   React.render(
     <IntroPage />,
