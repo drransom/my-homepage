@@ -93,7 +93,7 @@ var asteroids = {
 
 var chess = {
   imageUrl: "",
-  imgAltText: 'Chess logl',
+  imgAltText: 'Chess logo',
   projectName: 'Command Line Chess',
   projectDescription: 'Written in Ruby, this command line game supports ' +
     'two human players or a human-AI match against a <a target="_blank" ' +
