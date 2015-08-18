@@ -4,10 +4,6 @@
 
   window.ECR = window.ECR || {};
 
-  ECR.displayBio = function () {
-    alert("you clicked on the bio link!");
-  };
-
   var Biography = React.createClass({
     displayName: "Biography",
 
@@ -90,6 +86,31 @@
     ECR.clearDisplayArea();
     React.render(React.createElement(Biography, { funFacts: funFacts }), document.getElementById('main-content-area'));
     return false;
+  };
+})();
+"use strict";
+
+;(function () {
+  window.ECR = window.ECR || {};
+
+  ECR.initializeHistory = function () {
+    history.pushState({ page: "home" }, "", "");
+    window.onpopstate = ECR.updatePageStatus();
+  };
+
+  ECR.updatePageStatus = function () {
+    return function (event) {
+      switch (event.state.page) {
+        case "home":
+          ECR.displayIntroPage({ pushHistory: false });
+          break;
+        case "projects":
+          ECR.displayPortfolio({ pushHistory: false });
+          break;
+        // case "about":
+        //   ECR
+      }
+    };
   };
 })();
 "use strict";
@@ -456,7 +477,16 @@
   ECR.initializePage = function () {
     ECR.loadImages();
     ECR.createNavbar();
+    ECR.initializeHistory();
+    ECR.displayIntroPage();
+  };
+
+  ECR.displayIntroPage = function (options) {
+    options = options || {};
     React.render(React.createElement(IntroPage, null), document.getElementById('main-content-area'));
+    if (!options.pushHistory) {
+      history.pushState({ page: "home" }, "", "");
+    };
   };
 })();
 "use strict";
@@ -562,5 +592,8 @@
   ECR.displayPortfolio = function () {
     ECR.clearDisplayArea();
     React.render(React.createElement(ProjectAreaDisplay, { projects: [taskForce, asteroids, chess, dominionator] }), document.getElementById('main-content-area'));
+    if (!options.pushHistory) {
+      history.pushState({ page: "projects" }, "", "");
+    };
   };
 })();

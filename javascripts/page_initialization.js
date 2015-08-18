@@ -68,10 +68,20 @@ ECR.clearDisplayArea = function() {
 ECR.initializePage = function() {
   ECR.loadImages();
   ECR.createNavbar();
+  ECR.initializeHistory();
+  ECR.displayIntroPage();
+
+};
+
+ECR.displayIntroPage = function(options) {
+  options = options || {};
   React.render(
     <IntroPage />,
     document.getElementById('main-content-area')
   );
-}
+  if (!options.pushHistory) {
+    history.pushState({page: "home"}, "", "");
+  };
+};
 
 })();

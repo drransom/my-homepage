@@ -109,6 +109,9 @@ ECR.displayPortfolio = function() {
     <ProjectAreaDisplay projects={[taskForce, asteroids, chess, dominionator]} />,
     document.getElementById('main-content-area')
   );
+  if (!options.pushHistory) {
+    history.pushState({page: "projects"}, "", "");
+  };
 };
 
 

@@ -2,10 +2,6 @@
 
 window.ECR = window.ECR || {};
 
-ECR.displayBio = function() {
-  alert("you clicked on the bio link!");
-};
-
 var Biography = React.createClass({
   render: function() {
     var funFactObjects = this.props.funFacts.map(function(funFact) {
