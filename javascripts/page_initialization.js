@@ -80,7 +80,7 @@ ECR.displayIntroPage = function(options) {
     document.getElementById('main-content-area')
   );
   if (options.pushHistory === undefined || options.pushHistory) {
-    history.pushState({page: "home"}, "", "");
+    history.pushState({url: "elliotreed.com", page: "home"}, "", "");
   };
 };
 

@@ -19,7 +19,7 @@ var Navbar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand er-navbar-brand" href="http://www.elliotreed.com">Elliot Reed</a>
+              <a className="navbar-brand er-navbar-brand" href="javascript:void(0)" onClick={ECR.displayIntroPage}>Elliot Reed</a>
             </div>
 
             <div className="collapse navbar-collapse" id="er-navigation">

@@ -111,7 +111,7 @@ ECR.displayPortfolio = function(options) {
     document.getElementById('main-content-area')
   );
   if (options.pushHistory === undefined || options.pushHistory) {
-    history.pushState({page: "projects"}, "", "");
+    history.pushState({url: "elliotreed.com", page: "projects"}, "", "");
   };
 };
 

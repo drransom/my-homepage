@@ -85,7 +85,7 @@ ECR.displayBio = function(options) {
     document.getElementById('main-content-area')
   );
   if (options.pushHistory === undefined || options.pushHistory) {
-    history.pushState({page: "about"}, "", "");
+    history.pushState({url: "elliotreed.com", page: "about"}, "", "");
   }
 
   return false;

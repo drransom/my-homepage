@@ -87,7 +87,7 @@
     ECR.clearDisplayArea();
     React.render(React.createElement(Biography, { funFacts: funFacts }), document.getElementById('main-content-area'));
     if (options.pushHistory === undefined || options.pushHistory) {
-      history.pushState({ page: "about" }, "", "");
+      history.pushState({ url: "elliotreed.com", page: "about" }, "", "");
     }
 
     return false;
@@ -99,23 +99,21 @@
   window.ECR = window.ECR || {};
 
   ECR.initializeHistory = function () {
-    history.pushState({ page: "home" }, "", "");
-    window.onpopstate = ECR.updatePageStatus();
+    history.pushState({ url: "elliotreed.com", page: "home" }, "", "");
+    window.onpopstate = ECR.updatePageStatus;
   };
 
-  ECR.updatePageStatus = function () {
-    return function (event) {
-      switch (event.state.page) {
-        case "home":
-          ECR.displayIntroPage({ pushHistory: false });
-          break;
-        case "projects":
-          ECR.displayPortfolio({ pushHistory: false });
-          break;
-        case "about":
-          ECR.displayBio({ pushHistory: false });
-          break;
-      }
+  ECR.updatePageStatus = function (event) {
+    switch (event.state.page) {
+      case "home":
+        ECR.displayIntroPage({ pushHistory: false });
+        break;
+      case "projects":
+        ECR.displayPortfolio({ pushHistory: false });
+        break;
+      case "about":
+        ECR.displayBio({ pushHistory: false });
+        break;
     };
   };
 })();
@@ -227,7 +225,7 @@
               ),
               React.createElement(
                 "a",
-                { className: "navbar-brand er-navbar-brand", href: "http://www.elliotreed.com" },
+                { className: "navbar-brand er-navbar-brand", href: "javascript:void(0)", onClick: ECR.displayIntroPage },
                 "Elliot Reed"
               )
             ),
@@ -491,7 +489,7 @@
     options = options || {};
     React.render(React.createElement(IntroPage, null), document.getElementById('main-content-area'));
     if (options.pushHistory === undefined || options.pushHistory) {
-      history.pushState({ page: "home" }, "", "");
+      history.pushState({ url: "elliotreed.com", page: "home" }, "", "");
     };
   };
 })();
@@ -600,7 +598,7 @@
     ECR.clearDisplayArea();
     React.render(React.createElement(ProjectAreaDisplay, { projects: [taskForce, asteroids, chess, dominionator] }), document.getElementById('main-content-area'));
     if (options.pushHistory === undefined || options.pushHistory) {
-      history.pushState({ page: "projects" }, "", "");
+      history.pushState({ url: "elliotreed.com", page: "projects" }, "", "");
     };
   };
 })();
