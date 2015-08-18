@@ -34,7 +34,7 @@ var Navbar = React.createClass({
                 <li className="dropdown">
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
                   <ul className="dropdown-menu er-navbar-item">
-                    <li ClassName="er-navbar-list-item">
+                    <li className="er-navbar-list-item">
                       <a className="er-navbar-list-item-link er-portfolio-link" target="_blank" href="javascript:void(0)" onClick={ECR.displayPortfolio}>All Projects</a>
                     </li>
                     <li className="er-navbar-list-item">

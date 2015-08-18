@@ -82,9 +82,14 @@
 
   var funFacts = [language, frontEnd, backEnd, sortAlgorithm, nonSortAlgorithm, firstLanguage, age, lawDegrees, moreFun, yearsInBayArea, pastime];
 
-  ECR.displayBio = function () {
+  ECR.displayBio = function (options) {
+    options = options || {};
     ECR.clearDisplayArea();
     React.render(React.createElement(Biography, { funFacts: funFacts }), document.getElementById('main-content-area'));
+    if (options.pushHistory === undefined || options.pushHistory) {
+      history.pushState({ page: "about" }, "", "");
+    }
+
     return false;
   };
 })();
@@ -107,8 +112,9 @@
         case "projects":
           ECR.displayPortfolio({ pushHistory: false });
           break;
-        // case "about":
-        //   ECR
+        case "about":
+          ECR.displayBio({ pushHistory: false });
+          break;
       }
     };
   };
@@ -275,7 +281,7 @@
                     { className: "dropdown-menu er-navbar-item" },
                     React.createElement(
                       "li",
-                      { ClassName: "er-navbar-list-item" },
+                      { className: "er-navbar-list-item" },
                       React.createElement(
                         "a",
                         { className: "er-navbar-list-item-link er-portfolio-link", target: "_blank", href: "javascript:void(0)", onClick: ECR.displayPortfolio },
@@ -484,7 +490,7 @@
   ECR.displayIntroPage = function (options) {
     options = options || {};
     React.render(React.createElement(IntroPage, null), document.getElementById('main-content-area'));
-    if (!options.pushHistory) {
+    if (options.pushHistory === undefined || options.pushHistory) {
       history.pushState({ page: "home" }, "", "");
     };
   };
@@ -589,10 +595,11 @@
     sourceUrl: 'https://github.com/drransom/chess'
   };
 
-  ECR.displayPortfolio = function () {
+  ECR.displayPortfolio = function (options) {
+    options = options || {};
     ECR.clearDisplayArea();
     React.render(React.createElement(ProjectAreaDisplay, { projects: [taskForce, asteroids, chess, dominionator] }), document.getElementById('main-content-area'));
-    if (!options.pushHistory) {
+    if (options.pushHistory === undefined || options.pushHistory) {
       history.pushState({ page: "projects" }, "", "");
     };
   };

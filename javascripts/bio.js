@@ -77,12 +77,17 @@ var funFacts = [language, frontEnd, backEnd, sortAlgorithm, nonSortAlgorithm,
                 yearsInBayArea, pastime];
 
 
-ECR.displayBio = function() {
+ECR.displayBio = function(options) {
+  options = options || {};
   ECR.clearDisplayArea();
   React.render(
     <Biography funFacts={funFacts} />,
     document.getElementById('main-content-area')
   );
+  if (options.pushHistory === undefined || options.pushHistory) {
+    history.pushState({page: "about"}, "", "");
+  }
+
   return false;
 };
 

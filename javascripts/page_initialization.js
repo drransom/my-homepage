@@ -79,7 +79,7 @@ ECR.displayIntroPage = function(options) {
     <IntroPage />,
     document.getElementById('main-content-area')
   );
-  if (!options.pushHistory) {
+  if (options.pushHistory === undefined || options.pushHistory) {
     history.pushState({page: "home"}, "", "");
   };
 };

@@ -103,13 +103,14 @@ var chess = {
   sourceUrl: 'https://github.com/drransom/chess'
 };
 
-ECR.displayPortfolio = function() {
+ECR.displayPortfolio = function(options) {
+  options = options || {};
   ECR.clearDisplayArea();
   React.render(
     <ProjectAreaDisplay projects={[taskForce, asteroids, chess, dominionator]} />,
     document.getElementById('main-content-area')
   );
-  if (!options.pushHistory) {
+  if (options.pushHistory === undefined || options.pushHistory) {
     history.pushState({page: "projects"}, "", "");
   };
 };
