@@ -118,7 +118,8 @@ body {
   background: inherit
 }
 
-.navbar-brand.er-navbar-brand {
+.navbar-brand.er-navbar-brand,
+.navbar-brand.er-navbar-brand:focus {
   color: #ffffff;
 }
 
